@@ -10,30 +10,42 @@ This is our atm. Feel free to use it!
 #### Main Window
 ![Interface](screenshots/image3.png)
 
-### How to run it
-Double click on the jar file just like you would do for an .exe file. <br>
-Make sure you have Java installed on your computer. <br>
-Also you need a mysql server installed on your pc (find a tutorial about how to set it up). <br>
-Enable the server and run the code from the ```dbCreation.sql``` script (search online how to do it). <br> 
-I used xampp package in my pc which has a mysql server pre-installed. <br>
-App uses the following creadentials which are xampp's default user credentials: <br>
+### Requirements
+You will need Java installed on your PC. <br>
+The next thing you will need is a MySQL Server. You can either download it from the official site <br>
+or you can download xampp which is a package with some servers pre-installed. <br>
+You can find online help about how to set these tools up.<br>
+I used xampp package. <br>
 
+### Before you run the app
+Either you have set up MySQL Server on your own or you have downloaded xampp you will need to do some things<br>
+before you will run the app for the first time. <br>
 
-Username: ```root``` <br>
-Password: ```(Here xampp does not contain any password. It is just an empty string)``` <br>
+First you will need to run the code of ```dbCreation.sql``` file in order to create the database.<br>
+Then, create a user in the database with the following credentials (Find online help about how to do it on MySQL Server itself or on xampp package): <br>
 
-Those credentials are unsafe. In real life make sure you'll create a user with the least amount of privileges. <br>
-If you use mysql server create a simple user with only the necessary privileges for your database. <br>
-Then change the login credentials in the source code of the project. (Those will not be applied to the runnable jar. You will need to create it again). 
-If you use xampp make sure you will run the code of the ```dbCreation.sql``` script on ```phpmyadmin``` page of xampp (On the xampp panel start both apache server
-and mysql server and then press the admin button next to MySQL module. Go to the field where you can run your sql code and paste the code from the file. Then go down and press the execute button.) <br>
-If you use xampp you will need to enable only the mysql server but if you want to track the database you will need to enable the apache server also.
+Username: ```simple``` <br>
+Password: ```!@#$%^&*()``` <br>
+
+In real life these credentials must not be public just like I did here.<br>
+It is just a proof of concept but these are the credentials that app uses to have access in the database. <br>
+
+For security reasons, this user must have the least amount of privileges in the system. <br>
+In my configuration, this user does not have any privilege on the entire server. He only has ```select``` and ```update``` privileges <br>
+on ```users``` table of ```moschoubank``` database. Find online resources about how to set user's privileges. <br>
+
+The above steps are necessary only before you will run the app for the first time. <br>
+After you complete all the previous steps, you can run the app whenever you want without having to set anything up. <br>
+
+### Keep in mind
+Every time before you run the app make sure that mysql server is turned on. <br>
+Then double click on the jar file and you are ready to go.<br>
 The source code of the project is also provided if you want to import it to an IDE and run it from there (It is an Eclipse project). <br><br>
 
 ### How it works
 User enters his card number and after that he enters the pin. <br>
 Only deposit, withdraw and show balance operations are implemented. <br>
-In every successful transaction, app will update the users table of the database. <br>
+In every successful transaction, app will update the ```users``` table of the database. <br>
 
 You can use my test account: <br><br>
 Card Number: ```11111``` <br>
