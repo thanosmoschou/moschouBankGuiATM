@@ -39,7 +39,7 @@ After you complete all the previous steps, you can run the app whenever you want
 
 ### Keep in mind
 Every time before you run the app make sure that mysql server is turned on. <br>
-Then double click on the jar file and you are ready to go.<br>
+Then double click on the ```atm.jar``` file (inside the runnable jar file folder) and you are ready to go.<br>
 The source code of the project is also provided if you want to import it to an IDE and run it from there (It is an Eclipse project). <br><br>
 
 ### How it works
