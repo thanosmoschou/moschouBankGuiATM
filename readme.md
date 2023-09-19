@@ -43,7 +43,7 @@ Then double-click on the ```atm.jar``` file (inside the runnable jar folder), an
 The source code of the project is also provided if you want to import it into an IDE and run it from there (it is an Eclipse project). <br><br>
 
 ### How it works
-User enters his card number and after that he enters the pin. <br>
+User enters his card number and after that he enters his pin. <br>
 Only deposit, withdraw and show balance operations are implemented. <br>
 In every successful transaction, app updates the ```users``` table of the database. <br>
 
