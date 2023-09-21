@@ -40,7 +40,8 @@ After you complete all the previous steps, you will be able to run the app whene
 ### Keep in mind
 Make sure that MySQL server is turned on every time you run the app. <br>
 Then double-click on the ```atm.jar``` file (inside the runnable jar folder), and you are ready to go.<br>
-The source code of the project is also provided if you want to import it into an IDE and run it from there (it is an Eclipse project). <br><br>
+The source code of the project is also provided if you want to import it into an IDE and run it from there (it is an Eclipse project). <br>
+If you import the project to an IDE (for example Eclipse) do not forget to add the MySQL connector jar file to the project's classpath.<br>
 
 ### How it works
 User enters his card number and after that he enters his pin. <br>
